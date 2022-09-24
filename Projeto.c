@@ -66,7 +66,8 @@ int main() {
     scanf("%lf", &nota[i][3]);
     }
     
-    media[i] = (nota[i][0] + nota[i][1] + nota[i][2] + nota[i][3]) / 4.0;
+    for(i = 0; i < N; i++){
+    media[i] = (nota[i][0] + nota[i][1] + nota[i][2] + nota[i][3]) / 4.0;}
     
     for (i = 0; i < N; i++){      
       for (x = i + 1; x < N; x++){
